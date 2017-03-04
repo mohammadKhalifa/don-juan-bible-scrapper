@@ -1,5 +1,5 @@
 # Don Juan Bible Scrapper
-Scrapes Sosuave Don Juan bible posts series into pdf and html
+Scrapes Sosuave Forums "The Don Juan Bible" posts series into pdf and html
 
 
 ## Screenshot
