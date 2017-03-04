@@ -5,7 +5,7 @@ import pdfkit
 main_url = 'http://www.sosuave.com/bible/bible.htm'
 
 def add_chapter(chapter_name , html_str) :
-    chapter_name = chapter_name.encode('ascii' , errors = 'ignore')
+    chapter_name = chapter_name.encode('ascii' , errors = 'ignore').strip()
     html_str += '''
     <h1>
     {0}
@@ -17,9 +17,9 @@ def add_chapter(chapter_name , html_str) :
 
 def add_topic(topic_name, topic_text, html_str):
 
-    topic_name = topic_name.encode('ascii', errors='ignore')
-    topic_text = topic_text.encode('ascii' , errors='ignore')
-    print 'Processing {0}...'.format(topic_name)
+    topic_name = topic_name.encode('ascii', errors='ignore').strip()
+    topic_text = topic_text.encode('ascii' , errors='ignore').strip()
+    print 'Processing \'{0}\'...'.format(topic_name)
     html_str += '''
     <h3>
     {0}
@@ -88,7 +88,7 @@ if __name__ == '__main__':
     </body>
     </html>
     '''
-    pdfkit.from_string(all_topics, 'DJ Bible.pdf')
-    f = open('DJ Bible.html', 'w+')
+    pdfkit.from_string(all_topics, 'external\\DJ Bible.pdf')
+    f = open('external\\DJ Bible.html', 'w+')
     f.write(all_topics)
 
