@@ -7,7 +7,7 @@ Scrapes Sosuave Forums "The Don Juan Bible" posts series into pdf and html
 
 ## Running and installing requirments
 
-`$ sudo apt-get install wkhtmltopdf` 
+`$ sudo apt-get install wkhtmltopdf`  
 `$ cd don-juan-bible-scrapper/`  
 `$ sudo pip install -r requirments.txt`  
 `$ python run_scrapper.py`  
