@@ -2,8 +2,8 @@
 Scrapes Sosuave Forums "The Don Juan Bible" posts series into pdf and html
 
 
-## Screenshot
-
+## PDF Screenshot
+![Screenshot] (https://github.com/mohammadKhalifa/don-juan-bible-scrapper/blob/master/screenshots/ss1.jpg)
 
 ## Running and installing requirments
 
